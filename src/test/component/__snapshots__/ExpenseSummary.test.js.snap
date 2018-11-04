@@ -7,7 +7,7 @@ exports[`should render multiple Expenses Summary Correctly 1`] = `
      
     expenses
      totalling 
-    ₱0.00
+    $0.00
   </h2>
 </div>
 `;
@@ -19,7 +19,7 @@ exports[`should render one Expense Summary Correctly 1`] = `
      
     expenses
      totalling 
-    ₱0.00
+    $0.00
   </h2>
 </div>
 `;
