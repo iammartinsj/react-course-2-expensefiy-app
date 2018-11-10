@@ -54,7 +54,7 @@ export const startEditExpense = (id, updates) => {
       dispatch(editExpense(id, updates));
     });
   }
-}
+};
 
 export const setExpenses = (expenses) => ({
   type:'SET_EXPENSES',
