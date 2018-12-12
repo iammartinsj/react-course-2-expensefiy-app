@@ -31,11 +31,15 @@ exports[`should render startEditExpense correctly 1`] = `
       onSubmit={[Function]}
     />
     <button
-      class="button button--secondary"
+      className="button button--secondary"
       onClick={[Function]}
     >
       Remove Expense
     </button>
   </div>
+  <ExpenseModal
+    onClearForRemovalExpense={[Function]}
+    onRemove={[Function]}
+  />
 </div>
 `;

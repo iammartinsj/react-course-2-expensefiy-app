@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { EditExpensePage } from '../../components/EditExpensePage';
 import expenses from '../fixtures/expenses';
 
-let startEditExpense,startRemoveExpense ,history ,wrapper;
+let startEditExpense ,startRemoveExpense ,history ,wrapper;
 
 beforeEach(()=> {
   startEditExpense = jest.fn();

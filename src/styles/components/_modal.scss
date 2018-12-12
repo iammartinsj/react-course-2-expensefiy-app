@@ -1,0 +1,46 @@
+//React-Modal-Portal direct div descendant
+.ReactModalPortal>div {
+  opacity: 0;
+}
+
+//React-Modal-Portal element with a class "ReactModal__Overlay" 
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center; //Flexbox property
+  display: flex; //Flexbox property
+  justify-content: center; //Flexbox property
+  transition: opacity 200ms ease-in-out;
+}
+
+//React-Modal-Portal element with a class ".ReactModal__Overlay--after-open" 
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+//React-Modal-Portal element with a class ".ReactModal__Overlay--before-close" 
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+//Modal Content
+.modal {
+  background: $off-white;
+  color: $dark-grey;
+  max-width: 40rem;
+  outline: none;
+  padding: $l-size;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0 0 $m-size 0;
+}
+
+.modal__body {
+  font-size:1.8rem;
+  font-weight: 300;
+  margin: 0 0 $s-size 0;
+  word-break: break-all;
+}
+
+
+

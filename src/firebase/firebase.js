@@ -2,7 +2,6 @@ import * as firebase from 'firebase';
 
  // Initialize Firebase
  var config = {
-  //  apiKey: "AIzaSyDY90pvKmGc6emW7fIl1PG-jbYHmmnyemc",
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.FIREBASE_DATABASE_URL,
@@ -15,8 +14,18 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 const googleAuthProvider =  new firebase.auth.GoogleAuthProvider();
+const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
+const gitHubAuthProvider = new firebase.auth.GithubAuthProvider();
+const twitterAuthProvider = new firebase.auth.TwitterAuthProvider();
 
-export { firebase, googleAuthProvider, database as default };
+export { 
+  firebase, 
+  googleAuthProvider,
+  facebookAuthProvider,
+  gitHubAuthProvider,
+  twitterAuthProvider,
+  database as default 
+};
 
 // database.ref('expenses').on('child_removed', (snapshot) => {
 //   console.log('removed: ', snapshot.key, snapshot.val());
